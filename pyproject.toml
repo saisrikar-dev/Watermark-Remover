@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "native-pdf-watermark-remover"
+version = "2.0.0"
+description = "Lossless PDF watermark detection and removal using native content-stream editing"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "Sai Srikar" }
+]
+dependencies = [
+  "PyMuPDF>=1.23.0"
+]
+keywords = [
+  "pdf",
+  "watermark",
+  "pymupdf",
+  "document-processing",
+  "content-stream"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Text Processing",
+  "Topic :: Office/Business :: Office Suites"
+]
+
+[project.scripts]
+pdf-watermark-remover = "watermark_remover:main"
